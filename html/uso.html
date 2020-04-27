@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>
+		PROIECT USO CRAWL
+	</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+	<div clas ="proiect">
+		<header class = "contur">
+			<img src="imagine/linux.jpg" alt="linux"> 	
+		<nav>
+	        <ul>
+	            <li><a href="uso.html">    Acasa   </a></li>
+	        	<li><a href="detalii.html">  Detalii  </a></li>
+	        	<li><a href= "contact.html">  Contact </a></li>
+	        	<li><a href="sursa.html">    Sursa  </a></li>
+	        </ul>
+	    </nav>
+	    <p class="text">
+		        Proiectul este realizat de:<br>
+			    Muscalu Florinela Gabriela <br>
+			    Radu Ioana Catalina <br>
+			    Racasean Ivona Maria
+		</p>
+		</header>
+    </div>
+
+<section>
+	<div class = "link">
+	    <h1>Cautare paginii prin link</h1>
+            <form a method="get"  >
+                <label for="link">Adauga link-ul</label>
+                <input  id="http" name= "adresa" > 
+                    <script >
+                        function myFunction ()
+                        { 
+                            if ( document.getElementById("http").value == "https://www.youtube.com/")
+                                alert("Nu puteti accesa acest site"); 
+                            else
+                                window.open(document.getElementById("http").value);
+    	                            
+                                 }
+                    </script>
+                <button onclick="myFunction()">Accseseaza</button>
+            </form>
+	</div>
+</section>
+
+<footer>
+	<div class="descriere">
+			<p align="center">Aceasta pagina a fost creata cu scopul realizarii unui proiect la USO. Proiectul consta in descarcarea<br> 
+			   unei paginii web cu ajutorul functilor curl sau wget din linux, mai multe informatii despre proiect se regasesc in caseta "Detalii".<br> </p>
+	</div>
+</footer>
+</body>
+</html>
